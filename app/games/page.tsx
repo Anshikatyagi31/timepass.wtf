@@ -29,18 +29,55 @@ const categories = [
 
 // Game data
 const gamesData = [
-    {
+  {
     id: "ludo",
     title: "Ludo King",
-    description:
-      "Play the classic board game with friends and family",
-    image: "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXlzaGE0M2JzaXd4cnk1cXB5NGpqbzZsMnpkZXVsOHJ2Y2plNXd2MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IhWX9HfEwlwbWhYJju/giphy.gif",
+    description: "Play the classic board game with friends and family",
+    image:
+      "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXlzaGE0M2JzaXd4cnk1cXB5NGpqbzZsMnpkZXVsOHJ2Y2plNXd2MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IhWX9HfEwlwbWhYJju/giphy.gif",
     href: "/games/ludo",
     categories: ["popular", "arcade"],
     isNew: false,
     isPopular: true,
     playCount: 12345,
-    },
+  },
+  {
+    id: "algorithm-arena",
+    title: "Algorithm Arena",
+    description:
+      "Compete in algorithm challenges and improve your coding skills",
+    image: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2VhNXF0c3Q4eTVoMW8xMjN6ODRiZHpsNWMxZTczYW4yZThpbDRndyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/bGgsc5mWoryfgKBx1u/giphy.gif",
+    href: "/games/algorithm-arena",
+    categories: ["popular", "skill"],
+    isNew: false,
+    isPopular: true,
+    playCount: 23456,
+  },
+  {
+    id: "code-punchline",
+    title: "Code Punchline",
+    description:
+      "Complete jokes by writing JavaScript code in this fun coding game!",
+    image:
+      "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2VhNXF0c3Q4eTVoMW8xMjN6ODRiZHpsNWMxZTczYW4yZThpbDRndyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3oKIPnAiaMCws8nOsE/giphy.gif",
+    href: "/games/code-punchline",
+    categories: ["new", "skill"],
+    isNew: true,
+    isPopular: false,
+    playCount: 34567,
+  },
+  {
+    id: "react-quest",
+    title: "React Quest",
+    description: "Learn React.js through an interactive adventure game",
+    image:
+      "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHQ0aWJ0NGRwYXIyd3ZyZmo2ZXY3ZWRiNG9rYjBuY3g0cHNndjRsZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/11j5OF7BTglVkc/giphy.gif",
+    href: "/games/react-quest",
+    categories: ["new", "skill"],
+    isNew: true,
+    isPopular: false,
+    playCount: 45678,
+  },
   {
     id: "crossword",
     title: "Crossword",

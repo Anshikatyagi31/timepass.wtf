@@ -9,6 +9,33 @@ import { ArrowLeft, Gamepad2 } from "lucide-react"
 export default function GamesIndex() {
   const games = [
     {
+      title: "Algorithm Arena",
+      description: "Compete in algorithm challenges and improve your coding skills",
+      image:
+        "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2VhNXF0c3Q4eTVoMW8xMjN6ODRiZHpsNWMxZTczYW4yZThpbDRndyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/bGgsc5mWoryfgKBx1u/giphy.gif",
+      href: "/games/algorithm-arena",
+      isNew: false,
+      isPopular: true,
+    },
+    {
+      title: "Code Punchline",
+      description: "Complete jokes by writing JavaScript code in this fun coding game!",
+      image:
+        "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2VhNXF0c3Q4eTVoMW8xMjN6ODRiZHpsNWMxZTczYW4yZThpbDRndyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3oKIPnAiaMCws8nOsE/giphy.gif",
+      href: "/games/code-punchline",
+      isNew: true,
+      isPopular: false,
+    },
+    {
+      title: "React Quest",
+      description: "Learn React.js through an interactive adventure game",
+      image:
+        "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHQ0aWJ0NGRwYXIyd3ZyZmo2ZXY3ZWRiNG9rYjBuY3g0cHNndjRsZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/78XCFBGOlS6keY1Bil/giphy.gif",
+      href: "/games/react-quest",
+      isNew: false,
+      isPopular: false,
+    },
+    {
         title: "Ludo King",
         description: "Play the classic board game with friends and family",
         image:

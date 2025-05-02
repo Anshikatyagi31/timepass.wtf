@@ -177,7 +177,7 @@ export default function LandingPage() {
                   variants={item}
                   className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/80"
                 >
-                  Play, Challenge,{" "}
+                  Play, Challenge, Code,{" "}
                   <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-500">
                     Timepass
                   </span>
@@ -192,7 +192,7 @@ export default function LandingPage() {
                     className="bg-gradient-to-r from-primary to-purple-500 hover:from-primary/90 hover:to-purple-500/90 text-white shadow-lg shadow-primary/20 transition-all hover:shadow-xl hover:shadow-primary/30"
                     asChild
                   >
-                    <Link href="#play-now">
+                    <Link href="/games">
                       Start Playing
                       <ChevronRight className="ml-2 h-4 w-4" />
                     </Link>
@@ -260,6 +260,109 @@ export default function LandingPage() {
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent z-10" />
                   <Image
+                    src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2VhNXF0c3Q4eTVoMW8xMjN6ODRiZHpsNWMxZTczYW4yZThpbDRndyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/bGgsc5mWoryfgKBx1u/giphy.gif"
+                    alt="Algorithm Arena"
+                    fill
+                    className="object-cover transition-all duration-700 group-hover:scale-110"
+                  />
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.2 }}
+                    className="absolute bottom-0 left-0 right-0 p-6 z-20"
+                  >
+                    <h3 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-white/90">
+                      Algorithm Arena - A Leetcode Alternative
+                    </h3>
+                    <p className="text-sm text-white/70">
+                      Solve coding challenges and improve your skills in a fun way
+                    </p>
+                  </motion.div>
+                </div>
+                <div className="p-5">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-2">
+                      <Clock className="h-4 w-4 text-primary" />
+                      <span className="text-xs text-muted-foreground">2-5 mins</span>
+                    </div>
+                    <Link href="/games/algorithm-arena" className="w-full pointer-events-auto z-20">
+                      <Button
+                        size="sm"
+                        className="w-full bg-gradient-to-r from-primary to-purple-500 hover:from-primary/90 hover:to-purple-500/90 text-white"
+                      >
+                        Play Now
+                      </Button>
+                    </Link>
+                  </div>
+                </div>
+                <div className="absolute top-3 right-3 bg-primary/90 text-white text-xs font-bold px-2 py-1 rounded-full">
+                  Popular
+                </div>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                viewport={{ once: true, margin: "-100px" }}
+                whileHover={{ y: -10, transition: { duration: 0.2 } }}
+                className="group relative overflow-hidden rounded-xl bg-background/50 backdrop-blur-sm border border-primary/10 shadow-xl shadow-primary/5"
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="relative aspect-[4/3] overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent z-10" />
+                  <Image
+                    src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHQ0aWJ0NGRwYXIyd3ZyZmo2ZXY3ZWRiNG9rYjBuY3g0cHNndjRsZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/78XCFBGOlS6keY1Bil/giphy.gif"
+                    alt="React JS Quest"
+                    fill
+                    className="object-cover transition-all duration-700 group-hover:scale-110"
+                  />
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.2 }}
+                    className="absolute bottom-0 left-0 right-0 p-6 z-20"
+                  >
+                    <h3 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-white/90">
+                      React Quest - Learn React.js
+                    </h3>
+                    <p className="text-sm text-white/70">
+                      Learn React.js through an interactive adventure game
+                    </p>
+                  </motion.div>
+                </div>
+                <div className="p-5">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-2">
+                      <Clock className="h-4 w-4 text-primary" />
+                      <span className="text-xs text-muted-foreground">2-5 mins</span>
+                    </div>
+                    <Link href="/games/react-quest" className="w-full pointer-events-auto z-20">
+                      <Button
+                        size="sm"
+                        className="w-full bg-gradient-to-r from-primary to-purple-500 hover:from-primary/90 hover:to-purple-500/90 text-white"
+                      >
+                        Play Now
+                      </Button>
+                    </Link>
+                  </div>
+                </div>
+                <div className="absolute top-3 right-3 bg-primary/90 text-white text-xs font-bold px-2 py-1 rounded-full">
+                  Popular
+                </div>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                viewport={{ once: true, margin: "-100px" }}
+                whileHover={{ y: -10, transition: { duration: 0.2 } }}
+                className="group relative overflow-hidden rounded-xl bg-background/50 backdrop-blur-sm border border-primary/10 shadow-xl shadow-primary/5"
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="relative aspect-[4/3] overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent z-10" />
+                  <Image
                     src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXlzaGE0M2JzaXd4cnk1cXB5NGpqbzZsMnpkZXVsOHJ2Y2plNXd2MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IhWX9HfEwlwbWhYJju/giphy.gif"
                     alt="Ludo King Game"
                     fill
@@ -299,6 +402,8 @@ export default function LandingPage() {
                   Popular
                 </div>
               </motion.div>
+
+
               
               {/* Game Card 2 - Typing Test */}
               <motion.div
