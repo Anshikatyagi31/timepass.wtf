@@ -227,7 +227,7 @@ export default function CodePunchlinePage() {
         >
           <div className="relative inline-block">
             <h1 className="text-5xl md:text-6xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500">
-              JS Playground
+              Code Punchline - Timepass.wtf
             </h1>
             <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 rounded-full"></div>
           </div>
@@ -279,7 +279,7 @@ export default function CodePunchlinePage() {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           <AnimatePresence>
-            {(showMobileLevels || window.innerWidth >= 1024) && (
+          {(showMobileLevels || (typeof window !== "undefined" && window.innerWidth >= 1024)) && (
               <motion.div
                 className={`${showMobileLevels ? "order-first" : "lg:col-span-1"}`}
                 initial={{ opacity: 0, x: -20 }}

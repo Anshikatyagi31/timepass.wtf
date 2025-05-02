@@ -108,7 +108,7 @@ console.log("Person's hobbies:", person.hobbies.join(", "));
         transition={{ duration: 0.5 }}
       >
         <h2 className="text-xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-purple-400">
-          JavaScript Playground
+          Code Punchline - Timepass.wtf
         </h2>
         <p className="text-purple-200 mb-4">
           Experiment with JavaScript code in this sandbox environment. Try out different methods, test ideas, and see
