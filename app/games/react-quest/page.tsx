@@ -314,6 +314,7 @@ export default function ReactQuest() {
   const [gameState, setGameState] = useState("character-select") // character-select, playing, level-complete
   const [completedLevels, setCompletedLevels] = useState<number[]>([])
   const [showSolution, setShowSolution] = useState(false)
+  const [activeTab, setActiveTab] = useState("code") // Added for automatic tab switching
 
   // Reset code when level changes
   useEffect(() => {
@@ -322,6 +323,7 @@ export default function ReactQuest() {
     setShowHint(false)
     setCurrentHintIndex(0)
     setShowSolution(false)
+    setActiveTab("code") // Reset active tab
   }, [currentLevel])
 
   const handleCharacterSelect = (character: (typeof characters)[0]) => {
@@ -331,6 +333,7 @@ export default function ReactQuest() {
 
   const handleRunCode = () => {
     setShowPreview(true)
+    setActiveTab("preview") // Switch to preview tab
   }
 
   const handleNextHint = () => {
@@ -569,7 +572,7 @@ export default function ReactQuest() {
               <div className="lg:col-span-2">
                 <Card className="bg-indigo-950/50 border-indigo-500/30 mb-4">
                   <CardContent className="p-4">
-                    <Tabs defaultValue="code" className="w-full">
+                    <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
                       <div className="flex justify-between items-center mb-4">
                         <TabsList className="bg-indigo-900/50">
                           <TabsTrigger value="code" className="data-[state=active]:bg-indigo-700">
